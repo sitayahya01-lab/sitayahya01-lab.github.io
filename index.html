@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Lazuardi Al-Muzaki">
+  <meta name="description" content="Middle Eastern food in the Main District.">
+  <title>Little Lemon</title>
+  <style>
+    :root {
+      --lemon: #fff3a8;
+      --lemon-deep: #f5d90a;
+      --leaf: #2f7d4f;
+      --ink: #2b2a22;
+      --paper: #fffdf0;
+      --line: #eadf8a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    header {
+      background: var(--lemon);
+      text-align: center;
+      padding: 28px 16px 20px;
+      border-bottom: 3px solid var(--lemon-deep);
+    }
+    .deco { font-size: 1.6rem; letter-spacing: .4rem; }
+    header h1 { margin: 6px 0 0; font-size: 2.4rem; }
+    header h1 a { color: var(--ink); text-decoration: none; }
+    header p { margin: 4px 0; }
+    nav { margin-top: 12px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    nav a {
+      color: var(--ink);
+      background: #fff;
+      border: 2px solid var(--lemon-deep);
+      border-radius: 999px;
+      padding: 6px 16px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover, nav a:focus-visible { background: var(--lemon-deep); outline: none; }
+    main { max-width: 760px; margin: 0 auto; padding: 24px 16px 8px; }
+    h2.page-title { font-size: 2rem; margin-bottom: 4px; }
+    .sub { margin-top: 0; color: #6b6a55; }
+    .dish {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      background: #fff;
+      border: 2px solid var(--line);
+      border-radius: 18px;
+      padding: 14px;
+      margin: 16px 0;
+    }
+    .photo { flex: 0 0 150px; text-align: center; }
+    .photo img, .photo .fallback {
+      width: 150px; height: 150px;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+    }
+    .photo .fallback {
+      background: var(--lemon);
+      font-size: 4rem;
+      align-items: center;
+      justify-content: center;
+      display: none;
+    }
+    .photo small { display: block; margin-top: 6px; color: #6b6a55; }
+    .dish h3 { margin: 0 0 4px; font-size: 1.4rem; }
+    .dish p { margin: 0 0 8px; }
+    .price { font-weight: bold; color: var(--leaf); font-size: 1.2rem; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; }
+    th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--line); }
+    th { background: var(--lemon); }
+    footer { text-align: center; padding: 28px 16px 36px; color: #6b6a55; }
+    @media (max-width: 520px) {
+      .dish { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="deco" aria-hidden="true">🧆 ✨ 🍋 ✨ 🥗</div>
+    <h1><a href="index.html">Little Lemon</a></h1>
+    <p>Middle Eastern food in the Main District</p>
+    <p>open daily 11:00–22:00 · come hungry</p>
+    <nav>
+      <a href="index.html">Menu</a>
+      <a href="location.html">Location</a>
+      <a href="book.html">Book a Table</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="page-title">Our Menu</h2>
+    <p class="sub">the menu, but make it cute 🧆💛</p>
+
+    <section class="dish">
+      <div class="photo">
+        <img src="falafel.jpeg" alt="A falafel" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="fallback" aria-hidden="true">🧆</div>
+        <small>obsessed 🔥</small>
+      </div>
+      <div>
+        <h3>Falafel</h3>
+        <p>Chickpea, herbs, and spices</p>
+        <span class="price">$9</span>
+      </div>
+    </section>
+
+    <section class="dish">
+      <div class="photo">
+        <img src="lasagna.jpeg" alt="A slice of lasagna" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="fallback" aria-hidden="true">🍽️</div>
+        <small>comfort food 🫶</small>
+      </div>
+      <div>
+        <h3>Lasagna</h3>
+        <p>Layered pasta, meat sauce, and baked cheese</p>
+        <span class="price">$16</span>
+      </div>
+    </section>
+
+    <section class="dish">
+      <div class="photo">
+        <img src="pizza.jpeg" alt="A margherita pizza with basil" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="fallback" aria-hidden="true">🍕</div>
+        <small>cheese pull 🧀</small>
+      </div>
+      <div>
+        <h3>Pizza</h3>
+        <p>Tomato, melted mozzarella, and basil</p>
+        <span class="price">$13</span>
+      </div>
+    </section>
+
+    <section class="dish">
+      <div class="photo">
+        <img src="donut.jpeg" alt="A glazed donut with sprinkles" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="fallback" aria-hidden="true">🍩</div>
+        <small>sweet tooth 🍩</small>
+      </div>
+      <div>
+        <h3>Donut</h3>
+        <p>Soft fried dough with sweet glaze and sprinkles</p>
+        <span class="price">$5</span>
+      </div>
+    </section>
+
+    <h2>Price list</h2>
+    <table>
+      <thead>
+        <tr><th>Dish</th><th>Price</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Falafel</td><td>$9</td></tr>
+        <tr><td>Lasagna</td><td>$16</td></tr>
+        <tr><td>Pizza</td><td>$13</td></tr>
+        <tr><td>Donut</td><td>$5</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p><strong>Little Lemon 🍋</strong></p>
+    <p>123 Rome Road, Main District, Capital City</p>
+    <p>Open daily, 11:00–22:00 · (021) 555 0123</p>
+    <p>see you soon, bestie 💛</p>
+  </footer>
+</body>
+</html>
